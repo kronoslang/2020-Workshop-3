@@ -1,149 +1,256 @@
 {:identity "z8j3pwz1773tkj5"
  :patch
 {:cables
-{["1o7cbpnrmq3xn2d" 0] [:fixed "nq90azvvrxemcpn" 0]
- ["24cz3gcuozgx6tc" 0] [:fixed "2wlir9vkf5gb7is" 0]
- ["24cz3gcuozgx6tc" 1] [:fixed "ge47xnlqb1ot3j9" 0]
- ["24cz3gcuozgx6tc" 2] [:fixed "tq96e4trpn04e21" 0]
- ["2wlir9vkf5gb7is" 0] [:fixed "kz793mkkj29y7u" 0]
+{["24cz3gcuozgx6tc" 0] [:fixed "2wlir9vkf5gb7is" 0]
+ ["24cz3gcuozgx6tc" 1] [:fixed "kba4q8jbuy34jm4" 0]
+ ["24cz3gcuozgx6tc" 2] [:fixed "28hx4wyr7n2y10k" 0]
+ ["2wlir9vkf5gb7is" 0] [:fixed "39qwfu40xq87gu" 0]
+ ["39qwfu40xq87gu" 0] [:fixed "7mck9adigwoauhd" 0]
+ ["39qwfu40xq87gu" 1] [:fixed "niw5vmtpj47fak2" 0]
  ["3u97087kpawmn87" 0] [:fixed "k361qtaw029x6iw" 0]
  ["3u97087kpawmn87" 1] [:fixed "24cz3gcuozgx6tc" 0]
  ["46i5myqwqql1ynh" 0] [:fixed "f91kmmklph6ocx0" 0]
  ["46i5myqwqql1ynh" 1] [:fixed "wtzq1mrbccq93dy" 0]
- ["7jprtzw9ytvu5zs" 0] [:fixed "24cz3gcuozgx6tc" 0]
+ ["5vjedij1ulx6yyk" 0] [:fixed "27t7ov9uzcxlegb" 0]
+ ["5vjedij1ulx6yyk" 1] [:fixed "24cz3gcuozgx6tc" 0]
+ ["6rxagb6ve7j1nw7" 0] [:fixed "nq90azvvrxemcpn" 0]
+ ["6rxagb6ve7j1nw7" 1] [:fixed "b85rv2a0eiw6kbg" 0]
  ["7mck9adigwoauhd" 0] [:fixed "46i5myqwqql1ynh" 0]
  ["90y54dfmp48w2vi" 0] [:fixed "hrzadtu96ps6vj1" 0]
- ["alzpxmnmrp2y7vd" 0] [:fixed "1o7cbpnrmq3xn2d" 0]
+ ["94o8kqq4pjsgj81" 0] [:fixed "3u97087kpawmn87" 0]
+ ["alzpxmnmrp2y7vd" 0] [:fixed "6rxagb6ve7j1nw7" 0]
  ["f91kmmklph6ocx0" 0] [:fixed "aciegg6nd6kr9rx" 0]
  ["hrzadtu96ps6vj1" 0] [:fixed "aciegg6nd6kr9rx" 0]
  ["hrzadtu96ps6vj1" 1] [:fixed "46i5myqwqql1ynh" 0]
  ["k361qtaw029x6iw" 0] [:fixed "alzpxmnmrp2y7vd" 0]
- ["k361qtaw029x6iw" 1] [:fixed "7jprtzw9ytvu5zs" 0]
- ["k361qtaw029x6iw" 2] [:fixed "62y42vdgphce26j" 0]
- ["kz793mkkj29y7u" 0] [:fixed "7mck9adigwoauhd" 0]
+ ["k361qtaw029x6iw" 1] [:fixed "5vjedij1ulx6yyk" 0]
+ ["k361qtaw029x6iw" 2] [:fixed "l0x0avcrl7a3tiw" 0]
  ["nq90azvvrxemcpn" 0] [:fixed "90y54dfmp48w2vi" 0]
- ["wtzq1mrbccq93dy" 0] [:fixed "kk8ee3bs5jadgot" 0]}
+ ["wtzq1mrbccq93dy" 0] [:fixed "1cc4inkwlr04b17" 0]}
  :nodes
-{"1o7cbpnrmq3xn2d" 
-{:inputs ["a"]
- :label "* 110"
+{"1cc4inkwlr04b17" 
+{:inputs []
+ :label "0.25 .o 2"
+ :name "tempo"
  :outputs [""]
- :parsed [:infix [:free-var "a"] "*" [:float "110"]]
- :pos [-8 230]}
+ :parsed [:widget "-wluo8o" 0.5 {:type :dial, :skin :circular, :min [:float "0.25"], :max [:float "2"]}]
+ :pos [-480 -135]
+ }
  "24cz3gcuozgx6tc" 
-{:inputs ["gate" "attack" "release"]
+{:color 3
+ :inputs ["gate" "attack" "release"]
  :label "AR-Env($gate $attack $release)"
  :outputs [""]
  :parsed [:fn "AR-Env" [:tuple [:free-var "gate"] [:free-var "attack"] [:free-var "release"]]]
- :pos [419 14]}
+ :pos [555 21]
+ }
+ "27t7ov9uzcxlegb" 
+{:flip-x true
+ :inputs []
+ :label "20 .o 3000"
+ :name "envelope amt"
+ :outputs [""]
+ :parsed [:widget "9eqjdq" 0.5 {:type :dial, :skin :circular, :min [:float "20"], :max [:float "3000"]}]
+ :pos [573 183]
+ }
+ "28hx4wyr7n2y10k" 
+{:color 3
+ :inputs []
+ :label "0 .o 0.5"
+ :name "release"
+ :outputs [""]
+ :parsed [:widget "pmfcgp" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
+ :pos [526 -164]
+ }
+ "2b570iwyuiea004" 
+{:color 3
+ :inputs []
+ :label "; We compute envelope from the phase within the current note, duty cycle length and smooth the result with a slew limiter."
+ :outputs []
+ :parsed [:comment "We compute envelope from the phase within the current note, duty cycle length and smooth the result with a slew limiter."]
+ :pos [341 -308]
+ }
  "2wlir9vkf5gb7is" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "& 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:float "1"]]
- :pos [299 -15]}
+ :pos [431 -56]
+ }
+ "39qwfu40xq87gu" 
+{:color 3
+ :inputs ["a" "b" "more..."]
+ :label "<"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "<" [:free-var "b"] [:free-var "more..."]]
+ :pos [309 -56]
+ }
  "3u97087kpawmn87" 
-{:inputs ["a" "b" "more..."]
+{:cable-midpoints 
+{}
+ :color 3
+ 
+ :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [413 228]
- :selected true}
+ :pos [472 280]
+ }
  "46i5myqwqql1ynh" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-29 -129]}
- "62y42vdgphce26j" 
+ :pos [34 -27]
+ }
+ "5vjedij1ulx6yyk" 
+{:cable-midpoints 
+{}
+ :color 3
+ :flip-x true
+ 
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [420 196]
+ }
+ "6rxagb6ve7j1nw7" 
+{:color 2
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [24 185]
+ }
+ "71493l5vc5tiyxx" 
 {:inputs []
- :label "0.7"
- :outputs [""]
- :parsed [:number-widget :float "o91jhf" "0.39119" ""]
- :pos [141 1]}
- "7jprtzw9ytvu5zs" 
-{:inputs ["a"]
- :label "* 3000"
- :outputs [""]
- :parsed [:infix [:free-var "a"] "*" [:number-widget :float "iez0c4" "1490" ""]]
- :pos [210 125]}
+ :label "; # Step Sequencer #\n\n\nThis patch demonstrates a small step sequencer."
+ :outputs []
+ :parsed [:comment "# Step Sequencer #\n\n\nThis patch demonstrates a small step sequencer."]
+ :pos [-397 -296]
+ }
+ "7cyid2xg3hzf6q" 
+{:color 2
+ :inputs []
+ :label "; convert semitone to frequency and drive oscillator into filter"
+ :outputs []
+ :parsed [:comment "convert semitone to frequency and drive oscillator into filter"]
+ :pos [-23 266]
+ }
  "7mck9adigwoauhd" 
-{:inputs ["x"]
+{:color 3
+ :inputs ["x"]
  :label "Fraction($x)"
  :outputs [""]
  :parsed [:fn "Fraction" [:tuple [:free-var "x"]]]
- :pos [104 -127]}
+ :pos [182 -56]
+ }
  "90y54dfmp48w2vi" 
-{:inputs ["a"]
+{:cable-midpoints 
+{0 [-167 148]}
+ :color 2
+ :inputs ["a"]
  :label "/ 12"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "12"]]
- :pos [-339 230]}
+ :pos [-279 183]
+ }
+ "94o8kqq4pjsgj81" 
+{:inputs ["sig"]
+ :label "o))"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [568 280]
+ }
  "aciegg6nd6kr9rx" 
 {:inputs []
  :label "[0 3 2 4 5 8 2 3]"
+ :name "note sequence in semitones"
  :outputs [""]
- :parsed [:list [:float "0"] [:number-widget :float "bb5l9f" "1" ""] [:number-widget :float "2wv7t5" "14" ""] [:float "4"] [:number-widget :float "-mrnk57" "-8" ""] [:number-widget :float "27i6vy" "19" ""] [:float "2"] [:float "3"]]
- :pos [-390 -46]}
+ :parsed [:list [:float "0"] [:number-widget :float "bb5l9f" "2" ""] [:number-widget :float "2wv7t5" "9" ""] [:float "4"] [:number-widget :float "-mrnk57" "-8" ""] [:number-widget :float "27i6vy" "16" ""] [:number-widget :float "ug7uat" "2" ""] [:number-widget :float "qq4czq" "3" ""]]
+ :pos [-368 -27]
+ }
  "alzpxmnmrp2y7vd" 
-{:inputs ["freq"]
+{:color 2
+ :inputs ["freq"]
  :label "Gen:Saw($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Saw" [:tuple [:free-var "freq"]]]
- :pos [128 229]}
+ :pos [141 183]
+ }
+ "b85rv2a0eiw6kbg" 
+{:inputs []
+ :label "20 -x- 2000"
+ :name "base-frequency"
+ :outputs [""]
+ :parsed [:widget "-rmnrw1" 0.5 {:type :slider, :limits [[:float "20"] [:float "2000"]], :render [:limits], :size 3, :orientation :horizontal, :curve :exponential}]
+ :pos [-283 77]
+ }
  "f91kmmklph6ocx0" 
 {:inputs ["tuple"]
  :label "Arity($tuple)"
  :outputs [""]
  :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
- :pos [-111 -127]}
- "ge47xnlqb1ot3j9" 
-{:inputs []
- :label "0.01"
- :outputs [""]
- :parsed [:number-widget :float "-kt8t73" "0.017088" ""]
- :pos [303 -202]}
+ :pos [-54 -27]
+ }
  "hrzadtu96ps6vj1" 
 {:inputs ["vector" "constant-index"]
  :label "Select($vector $constant-index)"
  :outputs [""]
  :parsed [:fn "Select" [:tuple [:free-var "vector"] [:free-var "constant-index"]]]
- :pos [-87 11]}
+ :pos [57 63]
+ }
  "k361qtaw029x6iw" 
-{:inputs ["sig" "cutoff" "resonance"]
+{:color 2
+ 
+ :inputs ["sig" "cutoff" "resonance"]
  :label "Filter:Lowpass($sig $cutoff $resonance)"
  :outputs [""]
  :parsed [:fn "Filter:Lowpass" [:tuple [:free-var "sig"] [:free-var "cutoff"] [:free-var "resonance"]]]
- :pos [281 224]}
- "kk8ee3bs5jadgot" 
+ :pos [313 280]
+ }
+ "kba4q8jbuy34jm4" 
+{:color 3
+ :inputs []
+ :label "0 .o 0.5"
+ :name "attack"
+ :outputs [""]
+ :parsed [:widget "m1bwx" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
+ :pos [348 -164]
+ }
+ "l0x0avcrl7a3tiw" 
 {:inputs []
- :label "0.5"
+ :label "0 .o 1"
+ :name "resonance"
  :outputs [""]
- :parsed [:number-widget :float "53hjfq" "0.41768" ""]
- :pos [-456 -156]}
- "kz793mkkj29y7u" 
-{:inputs ["a"]
- :label "< 0.5"
+ :parsed [:widget "-sh3bt9" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :pos [290 100]
+ }
+ "niw5vmtpj47fak2" 
+{:color 3
+ :inputs []
+ :label "0 .o 1"
+ :name "legato"
  :outputs [""]
- :parsed [:infix [:free-var "a"] "<" [:float "0.5"]]
- :pos [270 -122]}
+ :parsed [:widget "-opku9q" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :pos [161 -164]
+ }
  "nq90azvvrxemcpn" 
-{:inputs ["b"]
+{:color 2
+ :inputs ["b"]
  :label "Math:Pow(2 $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:float "2"] [:free-var "b"]]]
- :pos [-180 230]}
- "tq96e4trpn04e21" 
-{:inputs []
- :label "0.3"
- :outputs [""]
- :parsed [:number-widget :float "tc2gaq" "0.16584" ""]
- :pos [419 -143]}
+ :pos [-123 183]
+ }
  "wtzq1mrbccq93dy" 
 {:inputs ["freq"]
  :label "Gen:Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Phasor" [:tuple [:free-var "freq"]]]
- :pos [-320 -156]}}
+ :pos [-306 -125]
+ }}
  :scale 1
  :scroll [0 0]}}

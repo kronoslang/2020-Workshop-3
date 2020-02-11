@@ -1,4 +1,10 @@
-{:identity "e6yb8lg19cci1u5"
+{:export 
+{:export-this-tab true
+ :user-interface 
+{"Q" true
+ "freq" true}}
+ :identifier "Complicated-Resonator"
+ :identity "e6yb8lg19cci1u5"
  :patch
 {:cables
 {["391ofv3chdfqbpk" 0] [:fixed "sxsnnvyb3gka118" 0]

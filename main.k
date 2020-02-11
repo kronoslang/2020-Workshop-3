@@ -50,7 +50,27 @@ One-Pole(sig p) {
 n59i8oyyetlp4uc-0
 }
 
-
+Complicated-Resonator() {
+(n3vqbv6515h4ik2m-0) = z-1(n6ihoxb1jopgo391-0)
+(nsxsnnvyb3gka118-0) = (1 - n84uctf1vtdmj3pz-0)
+(ngzg9mg4t7gz52e-0) = One-Pole(nq8vdpes25fk6nz-0 n86faka928dfg7j6-0)
+(nsboyud2dirg0ebr-0) = Complex:Real(ngzg9mg4t7gz52e-0)
+(n86faka928dfg7j6-0) = Complex:Conjugate(nbi817zcvb1g80jm-0)
+(nbi817zcvb1g80jm-0) = Complex:Polar(nnk5iz9hchf2ak9-0 n84uctf1vtdmj3pz-0)
+(nnk5iz9hchf2ak9-0) = (n3m29h5jaznwcd6x-0 * n3m29h5jaznwcd6x-0 * n3m29h5jaznwcd6x-0)
+(nn65g0r31xhlv080-0) = (n636pe02l4c0pacl-0 * n391ofv3chdfqbpk-0)
+(n3m29h5jaznwcd6x-0) = 0.30999999999999994
+(nopm930clblur8fu-0) = Gen:Noise(nr1ghm2xjzv3htbx-0)
+(n391ofv3chdfqbpk-0) = (nsxsnnvyb3gka118-0 * 0.5)
+(nr1ghm2xjzv3htbx-0) = 0.499d
+(n84uctf1vtdmj3pz-0) = Math:Pow(nfkurtijvg2xp8p7-0 ndtfnwudy41vwovr-0)
+(n636pe02l4c0pacl-0) = (nsboyud2dirg0ebr-0 - n3vqbv6515h4ik2m-0)
+(nq8vdpes25fk6nz-0) = One-Pole(nopm930clblur8fu-0 nbi817zcvb1g80jm-0)
+(nfkurtijvg2xp8p7-0) = 0.99
+(ndtfnwudy41vwovr-0) = 0.25
+(n6ihoxb1jopgo391-0) = z-1(nsboyud2dirg0ebr-0)
+nn65g0r31xhlv080-0
+}
 
 
 
