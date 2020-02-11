@@ -1,4 +1,9 @@
-{:identifier "FBAM"
+{:export 
+{:export-this-tab true
+ :user-interface 
+{"beta" true
+ "freq" true}}
+ :identifier "FBAM"
  :identity "lke5bc2l79zodsy"
  :patch
 {:cables
@@ -50,7 +55,8 @@
  :pos [288 48]
  }
  "mp1gi11slm9r07c" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0 .o 2"
  :name "beta"
  :outputs [""]
@@ -75,7 +81,8 @@
  :pos [-3 129]
  }
  "ts5x5qmzu8ct36q" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "20 .o 4000"
  :name "freq"
  :outputs [""]

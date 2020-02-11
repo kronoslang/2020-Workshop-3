@@ -1,52 +1,64 @@
-{:identifier "One-Pole"
+{:draft-argument "Gen:Noise(0.499d) Complex:Polar(0.01 0.95)"
+ :identifier "One-Pole"
  :identity "7wcxyorjego1185"
  :patch
 {:cables
-{["59i8oyyetlp4uc" 0] [:fixed "m0h87m8kv5e4vbt" 0]
- ["f2bbo4s5owr31c9" 0] [:fixed "shv5tw0akubldux" 0]
- ["f2bbo4s5owr31c9" 1] [:fixed "yat7gbxuiwdfzy6" 0]
- ["m0h87m8kv5e4vbt" 0] [:fixed "f2bbo4s5owr31c9" 0]
+{["4qj6v140z0423jn" 0] [:fixed "9oh6vd86xa2ig2w" 0]
+ ["4qj6v140z0423jn" 1] [:fixed "m0h87m8kv5e4vbt" 0]
+ ["59i8oyyetlp4uc" 0] [:fixed "yat7gbxuiwdfzy6" 0]
+ ["9oh6vd86xa2ig2w" 0] [:fixed "5r8bby5mjngt64p" 1]
+ ["9oh6vd86xa2ig2w" 1] [:fixed "5r8bby5mjngt64p" 1]
+ ["m0h87m8kv5e4vbt" 0] [:fixed "yat7gbxuiwdfzy6" 0]
  ["m0h87m8kv5e4vbt" 1] [:fixed "5r8bby5mjngt64p" 1]
- ["shv5tw0akubldux" 0] [:fixed "5r8bby5mjngt64p" 1]
- ["shv5tw0akubldux" 1] [:fixed "5r8bby5mjngt64p" 1]
  ["yat7gbxuiwdfzy6" 0] [:fixed "5r8bby5mjngt64p" 0]
- ["yat7gbxuiwdfzy6" 1] [:fixed "m0h87m8kv5e4vbt" 0]}
+ ["yat7gbxuiwdfzy6" 1] [:fixed "4qj6v140z0423jn" 0]}
  :nodes
-{"59i8oyyetlp4uc" 
+{"4qj6v140z0423jn" 
+{:cable-midpoints 
+{0 [327 -157]}
+ :flip-x true
+ :flip-y true
+ :inputs ["init" "sig~"]
+ :label "z-1($init $sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "init"] [:free-var "sig~"]]]
+ :pos [80 -144]
+ }
+ "59i8oyyetlp4uc" 
 {:inputs ["out"]
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [16 44]}
+ :pos [196 -77]
+ :selected true}
  "5r8bby5mjngt64p" 
 {:inputs []
  :label "(sig p) = arg"
  :outputs ["sig" "p"]
  :parsed "arg"
- :pos [-507 -57]}
- "f2bbo4s5owr31c9" 
-{:inputs ["init" "sig~"]
- :label "z-1($init $sig~)"
+ :pos [-257 53]
+ }
+ "9oh6vd86xa2ig2w" 
+{:inputs ["a" "b" "more..."]
+ :label "-"
  :outputs [""]
- :parsed [:fn "z-1" [:tuple [:free-var "init"] [:free-var "sig~"]]]
- :pos [-272 -16]
- :selected true}
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-112 198]
+ }
  "m0h87m8kv5e4vbt" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-164 11]}
- "shv5tw0akubldux" 
-{:inputs ["a" "b" "more..."]
- :label "-"
- :outputs [""]
- :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [-366 69]}
+ :pos [34 28]
+ }
  "yat7gbxuiwdfzy6" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-377 -92]}}}}
+ :pos [-157 -80]
+ }}
+ :scale 1
+ :scroll [0 0]}}

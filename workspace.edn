@@ -1,6 +1,6 @@
 {:assets 
 {}
- :current-tab 1
+ :current-tab 3
  :file "ws3.veneer"
  :manifest 
 {:dependencies 

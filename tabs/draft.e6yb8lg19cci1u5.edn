@@ -22,85 +22,99 @@
 {:inputs []
  :label "0 .o 3.14"
  :outputs [""]
- :parsed [:widget "7uypbg" 0.28 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "3.14"]}]
- :pos [-271 75]}
+ :parsed [:widget "7uypbg" 0.34500000000000003 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "3.14"]}]
+ :pos [-271 75]
+ }
  "3vqbv6515h4ik2m" 
 {:inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [443 -67]}
+ :pos [443 -67]
+ }
  "5eopoyh132pt6hr" 
 {:inputs []
  :label "0.9997"
  :outputs [""]
- :parsed [:number-widget :float "letk2g" "0.89521" ""]
- :pos [-419 -130]}
+ :parsed [:number-widget :float "letk2g" "0.85045" ""]
+ :pos [-419 -130]
+ }
  "636pe02l4c0pacl" 
 {:inputs ["a" "b" "more..."]
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [504 30]}
+ :pos [504 30]
+ }
  "6ihoxb1jopgo391" 
 {:inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [326 -67]}
+ :pos [326 -67]
+ }
  "86faka928dfg7j6" 
 {:inputs ["c"]
  :label "Complex:Conjugate($c)"
  :outputs [""]
  :parsed [:fn "Complex:Conjugate" [:tuple [:free-var "c"]]]
- :pos [99 84]}
+ :pos [99 84]
+ }
  "bi817zcvb1g80jm" 
 {:inputs ["angle" "radius"]
  :label "Complex:Polar($angle $radius)"
  :outputs [""]
  :parsed [:fn "Complex:Polar" [:tuple [:free-var "angle"] [:free-var "radius"]]]
- :pos [-71 85]}
+ :pos [-71 85]
+ }
  "gzg9mg4t7gz52e" 
 {:inputs ["sig" "p"]
  :label "One-Pole($sig $p)"
  :outputs [""]
  :parsed [:fn "One-Pole" [:tuple [:free-var "sig"] [:free-var "p"]]]
- :pos [174 201]}
+ :pos [174 201]
+ }
  "opm930clblur8fu" 
 {:inputs ["seed"]
  :label "Gen:Noise($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Noise" [:tuple [:free-var "seed"]]]
- :pos [-304 -27]}
+ :pos [-304 -27]
+ }
  "przb5f0ubj4bt3v" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [258 30]}
+ :pos [258 30]
+ }
  "q8vdpes25fk6nz" 
 {:inputs ["sig" "p"]
  :label "One-Pole($sig $p)"
  :outputs [""]
  :parsed [:fn "One-Pole" [:tuple [:free-var "sig"] [:free-var "p"]]]
- :pos [-10 199]}
+ :pos [-10 199]
+ }
  "r1ghm2xjzv3htbx" 
 {:inputs []
  :label "0.499d"
  :outputs [""]
  :parsed [:double "0.499"]
- :pos [-492 -27]}
+ :pos [-492 -27]
+ }
  "sboyud2dirg0ebr" 
 {:inputs ["c"]
  :label "Complex:Real($c)"
  :outputs [""]
  :parsed [:fn "Complex:Real" [:tuple [:free-var "c"]]]
- :pos [272 140]}
+ :pos [272 140]
+ }
  "sxsnnvyb3gka118" 
 {:inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [35 -48]}}
+ :pos [35 -48]
+ }}
  :scale 1
  :scroll [0 0]}}

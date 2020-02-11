@@ -41,12 +41,12 @@ njmkeh4dyncn5c93-0
 }
 
 One-Pole(sig p) {
-(n59i8oyyetlp4uc-0) = nm0h87m8kv5e4vbt-0
+(n59i8oyyetlp4uc-0) = nyat7gbxuiwdfzy6-0
 (n5r8bby5mjngt64p-0 n5r8bby5mjngt64p-1) = arg
-(nf2bbo4s5owr31c9-0) = z-1(nshv5tw0akubldux-0 nyat7gbxuiwdfzy6-0)
-(nm0h87m8kv5e4vbt-0) = (nf2bbo4s5owr31c9-0 * n5r8bby5mjngt64p-1)
-(nshv5tw0akubldux-0) = (n5r8bby5mjngt64p-1 - n5r8bby5mjngt64p-1)
-(nyat7gbxuiwdfzy6-0) = (n5r8bby5mjngt64p-0 + nm0h87m8kv5e4vbt-0)
+(nm0h87m8kv5e4vbt-0) = (nyat7gbxuiwdfzy6-0 * n5r8bby5mjngt64p-1)
+(nyat7gbxuiwdfzy6-0) = (n5r8bby5mjngt64p-0 + n4qj6v140z0423jn-0)
+(n9oh6vd86xa2ig2w-0) = (n5r8bby5mjngt64p-1 - n5r8bby5mjngt64p-1)
+(n4qj6v140z0423jn-0) = z-1(n9oh6vd86xa2ig2w-0 nm0h87m8kv5e4vbt-0)
 n59i8oyyetlp4uc-0
 }
 
