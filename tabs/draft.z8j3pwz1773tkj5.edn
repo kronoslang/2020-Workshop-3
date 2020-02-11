@@ -29,22 +29,19 @@
  :label "* 110"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "110"]]
- :pos [-8 230]
- }
+ :pos [-8 230]}
  "24cz3gcuozgx6tc" 
 {:inputs ["gate" "attack" "release"]
  :label "AR-Env($gate $attack $release)"
  :outputs [""]
  :parsed [:fn "AR-Env" [:tuple [:free-var "gate"] [:free-var "attack"] [:free-var "release"]]]
- :pos [419 14]
- }
+ :pos [419 14]}
  "2wlir9vkf5gb7is" 
 {:inputs ["a"]
  :label "& 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:float "1"]]
- :pos [299 -15]
- }
+ :pos [299 -15]}
  "3u97087kpawmn87" 
 {:inputs ["a" "b" "more..."]
  :label "*"
@@ -57,112 +54,96 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-29 -129]
- }
+ :pos [-29 -129]}
  "62y42vdgphce26j" 
 {:inputs []
  :label "0.7"
  :outputs [""]
  :parsed [:number-widget :float "o91jhf" "0.39119" ""]
- :pos [141 1]
- }
+ :pos [141 1]}
  "7jprtzw9ytvu5zs" 
 {:inputs ["a"]
  :label "* 3000"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:number-widget :float "iez0c4" "1490" ""]]
- :pos [210 125]
- }
+ :pos [210 125]}
  "7mck9adigwoauhd" 
 {:inputs ["x"]
  :label "Fraction($x)"
  :outputs [""]
  :parsed [:fn "Fraction" [:tuple [:free-var "x"]]]
- :pos [104 -127]
- }
+ :pos [104 -127]}
  "90y54dfmp48w2vi" 
 {:inputs ["a"]
  :label "/ 12"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "12"]]
- :pos [-339 230]
- }
+ :pos [-339 230]}
  "aciegg6nd6kr9rx" 
 {:inputs []
  :label "[0 3 2 4 5 8 2 3]"
  :outputs [""]
  :parsed [:list [:float "0"] [:number-widget :float "bb5l9f" "1" ""] [:number-widget :float "2wv7t5" "14" ""] [:float "4"] [:number-widget :float "-mrnk57" "-8" ""] [:number-widget :float "27i6vy" "19" ""] [:float "2"] [:float "3"]]
- :pos [-390 -46]
- }
+ :pos [-390 -46]}
  "alzpxmnmrp2y7vd" 
 {:inputs ["freq"]
  :label "Gen:Saw($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Saw" [:tuple [:free-var "freq"]]]
- :pos [128 229]
- }
+ :pos [128 229]}
  "f91kmmklph6ocx0" 
 {:inputs ["tuple"]
  :label "Arity($tuple)"
  :outputs [""]
  :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
- :pos [-111 -127]
- }
+ :pos [-111 -127]}
  "ge47xnlqb1ot3j9" 
 {:inputs []
  :label "0.01"
  :outputs [""]
  :parsed [:number-widget :float "-kt8t73" "0.017088" ""]
- :pos [303 -202]
- }
+ :pos [303 -202]}
  "hrzadtu96ps6vj1" 
 {:inputs ["vector" "constant-index"]
  :label "Select($vector $constant-index)"
  :outputs [""]
  :parsed [:fn "Select" [:tuple [:free-var "vector"] [:free-var "constant-index"]]]
- :pos [-87 11]
- }
+ :pos [-87 11]}
  "k361qtaw029x6iw" 
 {:inputs ["sig" "cutoff" "resonance"]
  :label "Filter:Lowpass($sig $cutoff $resonance)"
  :outputs [""]
  :parsed [:fn "Filter:Lowpass" [:tuple [:free-var "sig"] [:free-var "cutoff"] [:free-var "resonance"]]]
- :pos [281 224]
- }
+ :pos [281 224]}
  "kk8ee3bs5jadgot" 
 {:inputs []
  :label "0.5"
  :outputs [""]
  :parsed [:number-widget :float "53hjfq" "0.41768" ""]
- :pos [-456 -156]
- }
+ :pos [-456 -156]}
  "kz793mkkj29y7u" 
 {:inputs ["a"]
  :label "< 0.5"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "<" [:float "0.5"]]
- :pos [270 -122]
- }
+ :pos [270 -122]}
  "nq90azvvrxemcpn" 
 {:inputs ["b"]
  :label "Math:Pow(2 $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:float "2"] [:free-var "b"]]]
- :pos [-180 230]
- }
+ :pos [-180 230]}
  "tq96e4trpn04e21" 
 {:inputs []
  :label "0.3"
  :outputs [""]
  :parsed [:number-widget :float "tc2gaq" "0.16584" ""]
- :pos [419 -143]
- }
+ :pos [419 -143]}
  "wtzq1mrbccq93dy" 
 {:inputs ["freq"]
  :label "Gen:Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Phasor" [:tuple [:free-var "freq"]]]
- :pos [-320 -156]
- }}
+ :pos [-320 -156]}}
  :scale 1
  :scroll [0 0]}}

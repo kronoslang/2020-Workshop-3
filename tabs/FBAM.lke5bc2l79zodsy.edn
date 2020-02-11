@@ -23,8 +23,7 @@
  :name "my label"
  :outputs [""]
  :parsed [:fn "Gen:Sin" [:tuple [:free-var "freq"]]]
- :pos [-150 33]
- }
+ :pos [-150 33]}
  "74603l8xbiqf6ev" 
 {:cable-midpoints 
 {}
@@ -34,16 +33,14 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [136 129]
- }
+ :pos [136 129]}
  "j9bfc2dwzrmdxo4" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-3 -56]
- }
+ :pos [-3 -56]}
  "jmkeh4dyncn5c93" 
 {:cable-midpoints 
 {0 [61 58]}
@@ -52,8 +49,7 @@
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [288 48]
- }
+ :pos [288 48]}
  "mp1gi11slm9r07c" 
 {:color 3
  :inputs []
@@ -61,15 +57,13 @@
  :name "beta"
  :outputs [""]
  :parsed [:widget "9eli1g" 0 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "2"]}]
- :pos [-261 139]
- }
+ :pos [-261 139]}
  "pktyog73ib4j6za" 
 {:inputs []
  :label "; # Feedback-Amplitude Modulation #\n\n\nThis is another example of unit delay feedback in sound synthesis.\n\n\n[Please see our Trello card](https://trello.com/c/LwvikrDd/9-fbam-synthesis) for the background paper."
  :outputs []
  :parsed [:comment "# Feedback-Amplitude Modulation #\n\n\nThis is another example of unit delay feedback in sound synthesis.\n\n\n[Please see our Trello card](https://trello.com/c/LwvikrDd/9-fbam-synthesis) for the background paper."]
- :pos [-4 -323]
- }
+ :pos [-4 -323]}
  "q779dn2wp60r5zh" 
 {:cable-midpoints 
 {}
@@ -78,8 +72,7 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-3 129]
- }
+ :pos [-3 129]}
  "ts5x5qmzu8ct36q" 
 {:color 3
  :inputs []
@@ -87,8 +80,7 @@
  :name "freq"
  :outputs [""]
  :parsed [:widget "-zhh9d9" 0.5 {:type :dial, :skin :circular, :min [:float "20"], :max [:float "4000"]}]
- :pos [-264 20]
- }
+ :pos [-264 20]}
  "yqn7u2th3eubgxd" 
 {:cable-midpoints 
 {}
@@ -96,7 +88,6 @@
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [136 -56]
- }}
+ :pos [136 -56]}}
  :scale 1
  :scroll [0 0]}}

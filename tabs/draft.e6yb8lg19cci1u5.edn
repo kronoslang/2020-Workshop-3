@@ -1,120 +1,193 @@
 {:identity "e6yb8lg19cci1u5"
  :patch
 {:cables
-{["3vqbv6515h4ik2m" 0] [:fixed "6ihoxb1jopgo391" 0]
- ["636pe02l4c0pacl" 0] [:fixed "przb5f0ubj4bt3v" 0]
+{["391ofv3chdfqbpk" 0] [:fixed "sxsnnvyb3gka118" 0]
+ ["3vqbv6515h4ik2m" 0] [:fixed "6ihoxb1jopgo391" 0]
+ ["636pe02l4c0pacl" 0] [:fixed "sboyud2dirg0ebr" 0]
  ["636pe02l4c0pacl" 1] [:fixed "3vqbv6515h4ik2m" 0]
- ["6ihoxb1jopgo391" 0] [:fixed "przb5f0ubj4bt3v" 0]
+ ["6ihoxb1jopgo391" 0] [:fixed "sboyud2dirg0ebr" 0]
+ ["84uctf1vtdmj3pz" 0] [:fixed "fkurtijvg2xp8p7" 0]
+ ["84uctf1vtdmj3pz" 1] [:fixed "dtfnwudy41vwovr" 0]
  ["86faka928dfg7j6" 0] [:fixed "bi817zcvb1g80jm" 0]
- ["bi817zcvb1g80jm" 0] [:fixed "3m29h5jaznwcd6x" 0]
- ["bi817zcvb1g80jm" 1] [:fixed "5eopoyh132pt6hr" 0]
+ ["bi817zcvb1g80jm" 0] [:fixed "nk5iz9hchf2ak9" 0]
+ ["bi817zcvb1g80jm" 1] [:fixed "84uctf1vtdmj3pz" 0]
  ["gzg9mg4t7gz52e" 0] [:fixed "q8vdpes25fk6nz" 0]
  ["gzg9mg4t7gz52e" 1] [:fixed "86faka928dfg7j6" 0]
+ ["n65g0r31xhlv080" 0] [:fixed "636pe02l4c0pacl" 0]
+ ["n65g0r31xhlv080" 1] [:fixed "391ofv3chdfqbpk" 0]
+ ["nk5iz9hchf2ak9" 0] [:fixed "3m29h5jaznwcd6x" 0]
+ ["nk5iz9hchf2ak9" 1] [:fixed "3m29h5jaznwcd6x" 0]
+ ["nk5iz9hchf2ak9" 2] [:fixed "3m29h5jaznwcd6x" 0]
  ["opm930clblur8fu" 0] [:fixed "r1ghm2xjzv3htbx" 0]
- ["przb5f0ubj4bt3v" 0] [:fixed "sboyud2dirg0ebr" 0]
- ["przb5f0ubj4bt3v" 1] [:fixed "sxsnnvyb3gka118" 0]
  ["q8vdpes25fk6nz" 0] [:fixed "opm930clblur8fu" 0]
  ["q8vdpes25fk6nz" 1] [:fixed "bi817zcvb1g80jm" 0]
  ["sboyud2dirg0ebr" 0] [:fixed "gzg9mg4t7gz52e" 0]
- ["sxsnnvyb3gka118" 0] [:fixed "5eopoyh132pt6hr" 0]}
+ ["sxsnnvyb3gka118" 0] [:fixed "84uctf1vtdmj3pz" 0]}
  :nodes
-{"3m29h5jaznwcd6x" 
+{"1709ufoy71y0708" 
 {:inputs []
- :label "0 .o 3.14"
+ :label ";# Two-Pole Resonator #\n\n\nWe can make a real-valued resonator out of two complex-valued one-pole filters.\n\n\nBy connecting two *conjugate* poles in series, the imaginary parts cancel out!"
+ :outputs []
+ :parsed [:comment "# Two-Pole Resonator #\n\n\nWe can make a real-valued resonator out of two complex-valued one-pole filters.\n\n\nBy connecting two *conjugate* poles in series, the imaginary parts cancel out!"]
+ :pos [23 -327]
+ }
+ "1rp8bc4ar6d1uj8" 
+{:color 4
+ :inputs []
+ :label "; ### Feedforward Section ###\n\n\nWe can normalize peak gain wrt *frequency* by adding two zeroes at DC and Nyquist.\n\n\nThe extra gain of an unnormalized resonator is caused by the two conjugate poles converging on the extremes of the spectrum.\n\n\nBy always having a zero there as well, one of the poles is canceled out."
+ :outputs []
+ :parsed [:comment "### Feedforward Section ###\n\n\nWe can normalize peak gain wrt *frequency* by adding two zeroes at DC and Nyquist.\n\n\nThe extra gain of an unnormalized resonator is caused by the two conjugate poles converging on the extremes of the spectrum.\n\n\nBy always having a zero there as well, one of the poles is canceled out."]
+ :pos [471 -252]
+ }
+ "391ofv3chdfqbpk" 
+{:inputs ["a"]
+ :label "* 0.5"
+ :name "normalize peak gain"
  :outputs [""]
- :parsed [:widget "7uypbg" 0.34500000000000003 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "3.14"]}]
- :pos [-271 75]
+ :parsed [:infix [:free-var "a"] "*" [:float "0.5"]]
+ :pos [160 -89]
+ }
+ "3m29h5jaznwcd6x" 
+{:color 3
+ :inputs []
+ :label "0 .o 1"
+ :name "freq"
+ :outputs [""]
+ :parsed [:widget "7uypbg" 0.30999999999999994 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :pos [-404 17]
  }
  "3vqbv6515h4ik2m" 
-{:inputs ["sig~"]
+{:color 4
+ :inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [443 -67]
- }
- "5eopoyh132pt6hr" 
-{:inputs []
- :label "0.9997"
- :outputs [""]
- :parsed [:number-widget :float "letk2g" "0.85045" ""]
- :pos [-419 -130]
+ :pos [422 41]
  }
  "636pe02l4c0pacl" 
-{:inputs ["a" "b" "more..."]
+{:color 4
+ :inputs ["a" "b" "more..."]
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [504 30]
+ :pos [473 107]
  }
  "6ihoxb1jopgo391" 
-{:inputs ["sig~"]
+{:color 4
+ :inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [326 -67]
+ :pos [326 41]
+ }
+ "84uctf1vtdmj3pz" 
+{:color 3
+ :inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :name "4th root response curve"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [-237 -96]
  }
  "86faka928dfg7j6" 
 {:inputs ["c"]
  :label "Complex:Conjugate($c)"
  :outputs [""]
  :parsed [:fn "Complex:Conjugate" [:tuple [:free-var "c"]]]
- :pos [99 84]
+ :pos [71 79]
+ }
+ "b9m440b9i9id3vi" 
+{:inputs []
+ :label "; ### Feedback Section ###\n\n\nThe poles constitute the IIR part of this filter"
+ :outputs []
+ :parsed [:comment "### Feedback Section ###\n\n\nThe poles constitute the IIR part of this filter"]
+ :pos [134 248]
  }
  "bi817zcvb1g80jm" 
 {:inputs ["angle" "radius"]
  :label "Complex:Polar($angle $radius)"
  :outputs [""]
  :parsed [:fn "Complex:Polar" [:tuple [:free-var "angle"] [:free-var "radius"]]]
- :pos [-71 85]
+ :pos [-94 79]
+ }
+ "dtfnwudy41vwovr" 
+{:color 3
+ :inputs []
+ :label "0.25"
+ :outputs [""]
+ :parsed [:float "0.25"]
+ :pos [-327 -162]
+ }
+ "fkurtijvg2xp8p7" 
+{:color 3
+ :inputs []
+ :label "0 .o 1"
+ :name "Q"
+ :outputs [""]
+ :parsed [:widget "xjf75m" 0.99 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :pos [-334 -109]
  }
  "gzg9mg4t7gz52e" 
 {:inputs ["sig" "p"]
  :label "One-Pole($sig $p)"
  :outputs [""]
  :parsed [:fn "One-Pole" [:tuple [:free-var "sig"] [:free-var "p"]]]
- :pos [174 201]
+ :pos [172 190]
  }
- "opm930clblur8fu" 
-{:inputs ["seed"]
- :label "Gen:Noise($seed)"
- :outputs [""]
- :parsed [:fn "Gen:Noise" [:tuple [:free-var "seed"]]]
- :pos [-304 -27]
- }
- "przb5f0ubj4bt3v" 
-{:inputs ["a" "b" "more..."]
+ "n65g0r31xhlv080" 
+{:color 4
+ :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [258 30]
+ :pos [557 107]
+ }
+ "nk5iz9hchf2ak9" 
+{:color 3
+ :ephemeral-inputs #{"more"}
+ :inputs ["a" "b" "more" "more..."]
+ :label "*"
+ :name "cubic response curve"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more"] [:free-var "more..."]]
+ :pos [-283 77]
+ }
+ "opm930clblur8fu" 
+{:color 2
+ :inputs ["seed"]
+ :label "Gen:Noise($seed)"
+ :outputs [""]
+ :parsed [:fn "Gen:Noise" [:tuple [:free-var "seed"]]]
+ :pos [-220 249]
  }
  "q8vdpes25fk6nz" 
 {:inputs ["sig" "p"]
  :label "One-Pole($sig $p)"
  :outputs [""]
  :parsed [:fn "One-Pole" [:tuple [:free-var "sig"] [:free-var "p"]]]
- :pos [-10 199]
+ :pos [-9 189]
  }
  "r1ghm2xjzv3htbx" 
-{:inputs []
+{:color 2
+ :inputs []
  :label "0.499d"
  :outputs [""]
  :parsed [:double "0.499"]
- :pos [-492 -27]
+ :pos [-408 249]
  }
  "sboyud2dirg0ebr" 
 {:inputs ["c"]
  :label "Complex:Real($c)"
  :outputs [""]
  :parsed [:fn "Complex:Real" [:tuple [:free-var "c"]]]
- :pos [272 140]
+ :pos [309 190]
  }
  "sxsnnvyb3gka118" 
 {:inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [35 -48]
+ :pos [31 -89]
  }}
  :scale 1
  :scroll [0 0]}}
