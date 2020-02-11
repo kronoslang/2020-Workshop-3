@@ -1,0 +1,100 @@
+{:draft-argument "Gen:Pulse(1 0.5) 0.1 0.3"
+ :identifier "AR-Env"
+ :identity "qpg7906hukbfl5r"
+ :patch
+{:cables
+{["6ytio7gvhylyk7" 0] [:fixed "ilinv653gwpq957" 0]
+ ["75dhnmb6migefe0" 0] [:fixed "easfagbkhdq64d2" 0]
+ ["7jmbae62fa2f3ag" 0] [:fixed "cwsf0foyvypeexs" 0]
+ ["boyqk43213w6jvb" 0] [:fixed "55fnskb24ilsh3f" 2]
+ ["boyqk43213w6jvb" 1] [:fixed "7jmbae62fa2f3ag" 0]
+ ["cwsf0foyvypeexs" 0] [:fixed "55fnskb24ilsh3f" 0]
+ ["easfagbkhdq64d2" 0] [:fixed "rk4eyt35i70znja" 0]
+ ["ey5bq0b21hkhmro" 0] [:fixed "mupm1blrw5s44sz" 0]
+ ["ey5bq0b21hkhmro" 1] [:fixed "wxso1yc3uvhy3ua" 0]
+ ["ey5bq0b21hkhmro" 2] [:fixed "6ytio7gvhylyk7" 0]
+ ["ilinv653gwpq957" 0] [:fixed "55fnskb24ilsh3f" 1]
+ ["ilinv653gwpq957" 1] [:fixed "7jmbae62fa2f3ag" 0]
+ ["mupm1blrw5s44sz" 0] [:fixed "cwsf0foyvypeexs" 0]
+ ["mupm1blrw5s44sz" 1] [:fixed "easfagbkhdq64d2" 0]
+ ["rk4eyt35i70znja" 0] [:fixed "ey5bq0b21hkhmro" 0]
+ ["rk4eyt35i70znja" 1] [:fixed "easfagbkhdq64d2" 0]
+ ["wxso1yc3uvhy3ua" 0] [:fixed "boyqk43213w6jvb" 0]}
+ :nodes
+{"55fnskb24ilsh3f" 
+{:inputs []
+ :label "(gate attack release) = arg"
+ :outputs ["gate" "attack" "release"]
+ :parsed "arg"
+ :pos [-415 32]}
+ "6ytio7gvhylyk7" 
+{:inputs ["b"]
+ :label "1 /"
+ :outputs [""]
+ :parsed [:infix [:float "1"] "/" [:free-var "b"]]
+ :pos [-165 71]}
+ "75dhnmb6migefe0" 
+{:inputs ["out"]
+ :label "$out"
+ :outputs [""]
+ :parsed [:free-var "out"]
+ :pos [384 74]}
+ "7jmbae62fa2f3ag" 
+{:inputs ["sig"]
+ :label "Rate-of($sig)"
+ :name "sample rate"
+ :outputs [""]
+ :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
+ :pos [-250 -36]}
+ "boyqk43213w6jvb" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-255 151]}
+ "cwsf0foyvypeexs" 
+{:inputs ["sig"]
+ :label "Gen:Signal($sig)"
+ :outputs [""]
+ :parsed [:fn "Gen:Signal" [:tuple [:free-var "sig"]]]
+ :pos [-325 -132]}
+ "easfagbkhdq64d2" 
+{:inputs ["sig~"]
+ :label "z-1($sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
+ :pos [258 32]}
+ "ey5bq0b21hkhmro" 
+{:flip-y true
+ :inputs ["x" "low-bound" "high-bound"]
+ :label "Math:Clamp($x $low-bound $high-bound)"
+ :name "limit the slew"
+ :outputs [""]
+ :parsed [:fn "Math:Clamp" [:tuple [:free-var "x"] [:free-var "low-bound"] [:free-var "high-bound"]]]
+ :pos [24 25]}
+ "ilinv653gwpq957" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-292 86]}
+ "mupm1blrw5s44sz" 
+{:inputs ["a" "b" "more..."]
+ :label "-"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-82 -31]}
+ "rk4eyt35i70znja" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [136 -11]}
+ "wxso1yc3uvhy3ua" 
+{:inputs ["b"]
+ :label "-1 /"
+ :outputs [""]
+ :parsed [:infix [:float "-1"] "/" [:free-var "b"]]
+ :pos [-153 148]}}
+ :scale 1
+ :scroll [0 0]}}

@@ -1,0 +1,162 @@
+{:documentation "Two coupled oscillators that frequency-modulate each other."
+ :export 
+{:export-this-tab true
+ :user-interface 
+{"freq a" true
+ "freq b" true
+ "mod depth" true}}
+ :identifier "Cross-Mod"
+ :identity "initial"
+ :patch
+{:cables
+{["3t624c2ezaof4ss" 0] [:fixed "xsjr684ldxqltry" 0]
+ ["4l88kx9d714m4zh" 0] [:fixed "ahmazd29d1u95sp" 0]
+ ["4l88kx9d714m4zh" 1] [:fixed "cfticu5sx22wtmo" 0]
+ ["6eebkal6zxjhw7n" 0] [:fixed "a80lqez1dnbotw0" 0]
+ ["6eebkal6zxjhw7n" 1] [:fixed "ml38hd6ut024o4c" 0]
+ ["adqarkaqy76d1vi" 0] [:fixed "ea7wwnz3wku1vfz" 0]
+ ["ahmazd29d1u95sp" 0] [:fixed "6eebkal6zxjhw7n" 0]
+ ["cqkj2m7kxdqtard" 0] [:fixed "4l88kx9d714m4zh" 0]
+ ["ea7wwnz3wku1vfz" 0] [:fixed "a80lqez1dnbotw0" 0]
+ ["ea7wwnz3wku1vfz" 1] [:fixed "xec4a6nb95vqkyq" 0]
+ ["jsf1pgzy07cf4k8" 0] [:fixed "adqarkaqy76d1vi" 0]
+ ["jsf1pgzy07cf4k8" 1] [:fixed "12kgznbwjfs9lv6" 0]
+ ["ml38hd6ut024o4c" 0] [:fixed "xsjr684ldxqltry" 0]
+ ["xec4a6nb95vqkyq" 0] [:fixed "cqkj2m7kxdqtard" 0]
+ ["xsjr684ldxqltry" 0] [:fixed "jsf1pgzy07cf4k8" 0]}
+ :nodes
+{"12kgznbwjfs9lv6" 
+{:color 2
+ :inputs []
+ :label "1 .o 1500"
+ :name "freq a"
+ :outputs [""]
+ :parsed [:widget "-gyhq1z" 0.63 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "1500"]}]
+ :pos [-204 -17]
+ }
+ "1zhovsorr3lb8p0" 
+{:inputs []
+ :label "; if you have a cycle in your graph, you must patch through `z-1`!"
+ :outputs []
+ :parsed [:comment "if you have a cycle in your graph, you must patch through `z-1`!"]
+ :pos [98 309]
+ }
+ "3t624c2ezaof4ss" 
+{:inputs ["sig"]
+ :label "o))"
+ :name "listen here!"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [294 67]
+ }
+ "4l88kx9d714m4zh" 
+{:color 3
+ :ephemeral-inputs #{}
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [17 239]
+ }
+ "6eebkal6zxjhw7n" 
+{:color 3
+ 
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-144 239]
+ }
+ "a80lqez1dnbotw0" 
+{:inputs []
+ :label "0.1 .o 3"
+ :name "mod depth"
+ :outputs [""]
+ :parsed [:widget "-3sfvtm" 0.19999999999999996 {:type :dial, :skin :circular, :min [:float "0.1"], :max [:float "3"]}]
+ :pos [-320 67]
+ }
+ "adqarkaqy76d1vi" 
+{:color 2
+ :inputs ["a"]
+ :label "+ 1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "1"]]
+ :pos [-63 -86]
+ }
+ "ahmazd29d1u95sp" 
+{:color 3
+ :inputs ["a"]
+ :label "+ 1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "1"]]
+ :pos [-63 239]
+ }
+ "cfticu5sx22wtmo" 
+{:color 2
+ :inputs []
+ :label "1 .o 1500"
+ :name "freq b"
+ :outputs [""]
+ :parsed [:widget "-oniki2" 0.125 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "1500"]}]
+ :pos [-204 139]
+ }
+ "cqkj2m7kxdqtard" 
+{:color 3
+ :inputs ["freq"]
+ :label "Gen:Sin($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Sin" [:tuple [:free-var "freq"]]]
+ :pos [113 239]
+ }
+ "ea7wwnz3wku1vfz" 
+{:color 2
+ :flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-144 -86]
+ }
+ "enj9b44tfpe99gd" 
+{:inputs []
+ :label ";# Cross Modulation #\n\n\nThis patch has two sinusoid oscillators that frequency modulate each other.\n\n\nThe configuration is only possible in environments where you can use arbitrary unit-delay feedbacks (like Kronos)."
+ :outputs []
+ :parsed [:comment "# Cross Modulation #\n\n\nThis patch has two sinusoid oscillators that frequency modulate each other.\n\n\nThe configuration is only possible in environments where you can use arbitrary unit-delay feedbacks (like Kronos)."]
+ :pos [-98 -349]
+ }
+ "jsf1pgzy07cf4k8" 
+{:color 2
+ :ephemeral-inputs #{}
+ :flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [19 -86]
+ }
+ "ml38hd6ut024o4c" 
+{:color 2
+ :inputs ["sig~"]
+ :label "z-1($sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
+ :pos [236 -86]
+ }
+ "xec4a6nb95vqkyq" 
+{:color 3
+ :inputs ["sig~"]
+ :label "z-1($sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
+ :pos [234 239]
+ }
+ "xsjr684ldxqltry" 
+{:color 2
+ :inputs ["freq"]
+ :label "Gen:Sin($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Sin" [:tuple [:free-var "freq"]]]
+ :pos [115 -86]
+ }}
+ :scale 1
+ :scroll [0 0]}}
