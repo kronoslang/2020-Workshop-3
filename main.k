@@ -72,7 +72,33 @@ Complicated-Resonator() {
 nn65g0r31xhlv080-0
 }
 
-
+Workshop-Sequence() {
+(n46i5myqwqql1ynh-0) = (nf91kmmklph6ocx0-0 * nwtzq1mrbccq93dy-0)
+(n6rxagb6ve7j1nw7-0) = (nnq90azvvrxemcpn-0 * nb85rv2a0eiw6kbg-0)
+(n39qwfu40xq87gu-0) = (n7mck9adigwoauhd-0 < nniw5vmtpj47fak2-0)
+(n27t7ov9uzcxlegb-0) = 0.55
+(nk361qtaw029x6iw-0) = Filter:Lowpass(nalzpxmnmrp2y7vd-0 n5vjedij1ulx6yyk-0 nl0x0avcrl7a3tiw-0)
+(nhrzadtu96ps6vj1-0) = Select(naciegg6nd6kr9rx-0 n46i5myqwqql1ynh-0)
+(nniw5vmtpj47fak2-0) = 0.06499999999999997
+(nl0x0avcrl7a3tiw-0) = 0.74
+(nnq90azvvrxemcpn-0) = Math:Pow(2 n90y54dfmp48w2vi-0)
+(n2wlir9vkf5gb7is-0) = (n39qwfu40xq87gu-0 & 1)
+(n94o8kqq4pjsgj81-0) = n3u97087kpawmn87-0
+(n3u97087kpawmn87-0) = (nk361qtaw029x6iw-0 * n24cz3gcuozgx6tc-0)
+(n5vjedij1ulx6yyk-0) = (n27t7ov9uzcxlegb-0 * n24cz3gcuozgx6tc-0)
+(n90y54dfmp48w2vi-0) = (nhrzadtu96ps6vj1-0 / 12)
+(nwtzq1mrbccq93dy-0) = Gen:Phasor(n1cc4inkwlr04b17-0)
+(n7mck9adigwoauhd-0) = Fraction(n46i5myqwqql1ynh-0)
+(naciegg6nd6kr9rx-0) = [0 2 9 4 -8 16 2 3]
+(nf91kmmklph6ocx0-0) = Arity(naciegg6nd6kr9rx-0)
+(n1cc4inkwlr04b17-0) = 0.495
+(n24cz3gcuozgx6tc-0) = AR-Env(n2wlir9vkf5gb7is-0 nkba4q8jbuy34jm4-0 n28hx4wyr7n2y10k-0)
+(nkba4q8jbuy34jm4-0) = 0.005
+(nb85rv2a0eiw6kbg-0) = 0.21761910574776785
+(n28hx4wyr7n2y10k-0) = 0.20500000000000004
+(nalzpxmnmrp2y7vd-0) = Gen:Saw(n6rxagb6ve7j1nw7-0)
+n94o8kqq4pjsgj81-0
+}
 
 AR-Env(gate attack release) {
 (nrk4eyt35i70znja-0) = (ney5bq0b21hkhmro-0 + neasfagbkhdq64d2-0)

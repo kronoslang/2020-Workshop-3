@@ -1,4 +1,17 @@
 {:draft-argument "Gen:Pulse(1 0.5) 0.1 0.3"
+ :export 
+{:arguments 
+{"attack" 
+{:default-value "0.1"
+ :max-value "2"
+ :signal-type "control"}
+ "gate" 
+{:signal-type "audio"}
+ "release" 
+{:default-value "0.1"
+ :max-value "2"
+ :signal-type "control"}}
+ :export-this-tab true}
  :identifier "AR-Env"
  :identity "qpg7906hukbfl5r"
  :patch
@@ -26,75 +39,110 @@
  :label "(gate attack release) = arg"
  :outputs ["gate" "attack" "release"]
  :parsed "arg"
- :pos [-415 32]}
+ :pos [-442 -30]
+ }
  "6ytio7gvhylyk7" 
-{:inputs ["b"]
+{:color 3
+ :inputs ["b"]
  :label "1 /"
  :outputs [""]
  :parsed [:infix [:float "1"] "/" [:free-var "b"]]
- :pos [-165 71]}
+ :pos [-71 121]
+ }
  "75dhnmb6migefe0" 
 {:inputs ["out"]
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [384 74]}
+ :pos [407 87]
+ }
  "7jmbae62fa2f3ag" 
-{:inputs ["sig"]
+{:cable-midpoints 
+{}
+ :inputs ["sig"]
  :label "Rate-of($sig)"
  :name "sample rate"
  :outputs [""]
  :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
- :pos [-250 -36]}
+ :pos [-185 -24]
+ }
+ "888zmuk64drs41e" 
+{:color 3
+ :inputs []
+ :label "; compute positive and negative slope per sample"
+ :outputs []
+ :parsed [:comment "compute positive and negative slope per sample"]
+ :pos [-123 249]
+ }
  "boyqk43213w6jvb" 
-{:inputs ["a" "b" "more..."]
+{:color 3
+ :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-255 151]}
+ :pos [-175 195]
+ }
  "cwsf0foyvypeexs" 
 {:inputs ["sig"]
  :label "Gen:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Gen:Signal" [:tuple [:free-var "sig"]]]
- :pos [-325 -132]}
+ :pos [-320 -77]
+ }
  "easfagbkhdq64d2" 
 {:inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [258 32]}
+ :pos [249 89]
+ }
  "ey5bq0b21hkhmro" 
 {:flip-y true
  :inputs ["x" "low-bound" "high-bound"]
  :label "Math:Clamp($x $low-bound $high-bound)"
- :name "limit the slew"
+ :name ""
  :outputs [""]
  :parsed [:fn "Math:Clamp" [:tuple [:free-var "x"] [:free-var "low-bound"] [:free-var "high-bound"]]]
- :pos [24 25]}
+ :pos [47 37]
+ }
  "ilinv653gwpq957" 
-{:inputs ["a" "b" "more..."]
+{:color 3
+ :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-292 86]}
+ :pos [-177 121]
+ }
  "mupm1blrw5s44sz" 
-{:inputs ["a" "b" "more..."]
+{:cable-midpoints 
+{0 [132 0]}
+ :inputs ["a" "b" "more..."]
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [-82 -31]}
+ :pos [-42 -30]
+ }
  "rk4eyt35i70znja" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [136 -11]}
+ :pos [149 37]
+ }
  "wxso1yc3uvhy3ua" 
-{:inputs ["b"]
+{:color 3
+ :inputs ["b"]
  :label "-1 /"
  :outputs [""]
  :parsed [:infix [:float "-1"] "/" [:free-var "b"]]
- :pos [-153 148]}}
+ :pos [-69 195]
+ }
+ "zrkv4rdo6b6efo1" 
+{:inputs []
+ :label ";# Slew Limiter #\n\n\nThis slew limiter works by comparing the previous output to the current target, and approaching that as fast as the slopes permit."
+ :outputs []
+ :parsed [:comment "# Slew Limiter #\n\n\nThis slew limiter works by comparing the previous output to the current target, and approaching that as fast as the slopes permit."]
+ :pos [230 -222]
+ }}
  :scale 1
  :scroll [0 0]}}

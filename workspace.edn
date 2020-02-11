@@ -11,4 +11,4 @@
  :url "https://kronoslang.io"
  :version "0.1"}
  :name "2020-workshop-3"
- :tabs ("tabs/Cross-Mod.initial.edn" "tabs/FBAM.lke5bc2l79zodsy.edn" "tabs/One-Pole.7wcxyorjego1185.edn" "tabs/Complicated-Resonator.e6yb8lg19cci1u5.edn" "tabs/draft.z8j3pwz1773tkj5.edn" "tabs/AR-Env.qpg7906hukbfl5r.edn")}
+ :tabs ("tabs/Cross-Mod.initial.edn" "tabs/FBAM.lke5bc2l79zodsy.edn" "tabs/One-Pole.7wcxyorjego1185.edn" "tabs/Complicated-Resonator.e6yb8lg19cci1u5.edn" "tabs/Workshop-Sequence.z8j3pwz1773tkj5.edn" "tabs/AR-Env.qpg7906hukbfl5r.edn")}

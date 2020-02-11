@@ -1,4 +1,15 @@
-{:identity "z8j3pwz1773tkj5"
+{:export 
+{:export-this-tab true
+ :user-interface 
+{"attack" true
+ "base-frequency" true
+ "envelope amt" true
+ "legato" true
+ "release" true
+ "resonance" true
+ "tempo" true}}
+ :identifier "Workshop-Sequence"
+ :identity "z8j3pwz1773tkj5"
  :patch
 {:cables
 {["24cz3gcuozgx6tc" 0] [:fixed "2wlir9vkf5gb7is" 0]
@@ -33,7 +44,7 @@
  :label "0.25 .o 2"
  :name "tempo"
  :outputs [""]
- :parsed [:widget "-wluo8o" 0.5 {:type :dial, :skin :circular, :min [:float "0.25"], :max [:float "2"]}]
+ :parsed [:widget "-wluo8o" 0.495 {:type :dial, :skin :circular, :min [:float "0.25"], :max [:float "2"]}]
  :pos [-480 -135]
  }
  "24cz3gcuozgx6tc" 
@@ -50,7 +61,7 @@
  :label "20 .o 3000"
  :name "envelope amt"
  :outputs [""]
- :parsed [:widget "9eqjdq" 0.5 {:type :dial, :skin :circular, :min [:float "20"], :max [:float "3000"]}]
+ :parsed [:widget "9eqjdq" 0.55 {:type :dial, :skin :circular, :min [:float "20"], :max [:float "3000"]}]
  :pos [573 183]
  }
  "28hx4wyr7n2y10k" 
@@ -59,7 +70,7 @@
  :label "0 .o 0.5"
  :name "release"
  :outputs [""]
- :parsed [:widget "pmfcgp" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
+ :parsed [:widget "pmfcgp" 0.20500000000000004 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
  :pos [526 -164]
  }
  "2b570iwyuiea004" 
@@ -185,7 +196,7 @@
  :label "20 -x- 2000"
  :name "base-frequency"
  :outputs [""]
- :parsed [:widget "-rmnrw1" 0.5 {:type :slider, :limits [[:float "20"] [:float "2000"]], :render [:limits], :size 3, :orientation :horizontal, :curve :exponential}]
+ :parsed [:widget "-rmnrw1" 0.21761910574776785 {:type :slider, :limits [[:float "20"] [:float "2000"]], :render [:limits], :size 3, :orientation :horizontal, :curve :exponential}]
  :pos [-283 77]
  }
  "f91kmmklph6ocx0" 
@@ -217,7 +228,7 @@
  :label "0 .o 0.5"
  :name "attack"
  :outputs [""]
- :parsed [:widget "m1bwx" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
+ :parsed [:widget "m1bwx" 0.005 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
  :pos [348 -164]
  }
  "l0x0avcrl7a3tiw" 
@@ -225,7 +236,7 @@
  :label "0 .o 1"
  :name "resonance"
  :outputs [""]
- :parsed [:widget "-sh3bt9" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :parsed [:widget "-sh3bt9" 0.74 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
  :pos [290 100]
  }
  "niw5vmtpj47fak2" 
@@ -234,7 +245,7 @@
  :label "0 .o 1"
  :name "legato"
  :outputs [""]
- :parsed [:widget "-opku9q" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :parsed [:widget "-opku9q" 0.06499999999999997 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
  :pos [161 -164]
  }
  "nq90azvvrxemcpn" 
