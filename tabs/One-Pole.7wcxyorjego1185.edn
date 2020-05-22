@@ -18,8 +18,7 @@
  :label "; # Generic Filter #\n\n\nThis filter can accept either real-valued or complex-valued *pole*.\n\n\nReal-valued poles can only resonate at 0 or Nyquist, while Complex-valued poles can resonate at any frequency."
  :outputs []
  :parsed [:comment "# Generic Filter #\n\n\nThis filter can accept either real-valued or complex-valued *pole*.\n\n\nReal-valued poles can only resonate at 0 or Nyquist, while Complex-valued poles can resonate at any frequency."]
- :pos [-175 -305]
- }
+ :pos [-175 -305]}
  "4qj6v140z0423jn" 
 {:cable-midpoints 
 {0 [327 -157]}
@@ -29,22 +28,19 @@
  :label "z-1($init $sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "init"] [:free-var "sig~"]]]
- :pos [135 -46]
- }
+ :pos [135 -46]}
  "59i8oyyetlp4uc" 
 {:inputs ["out"]
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [263 21]
- }
+ :pos [263 21]}
  "5r8bby5mjngt64p" 
 {:inputs []
  :label "(sig p) = arg"
  :outputs ["sig" "p"]
  :parsed "arg"
- :pos [-281 148]
- }
+ :pos [-281 148]}
  "9oh6vd86xa2ig2w" 
 {:color 3
  :inputs ["a" "b" "more..."]
@@ -52,30 +48,26 @@
  :name "prefix"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [-16 293]
- }
+ :pos [-16 293]}
  "dgdd7v3aewzx7an" 
 {:color 3
  :inputs []
  :label "; To help Kronos understand the signal types in this circuit, you should provide an explicit *prefix* or initializer to the `z-1` node.\n\n\nHere we construct a zero prefix form the `p`ole argument. This makes sure the circuit signal type is that of the `p` parameter."
  :outputs []
  :parsed [:comment "To help Kronos understand the signal types in this circuit, you should provide an explicit *prefix* or initializer to the `z-1` node.\n\n\nHere we construct a zero prefix form the `p`ole argument. This makes sure the circuit signal type is that of the `p` parameter."]
- :pos [271 225]
- }
+ :pos [271 225]}
  "m0h87m8kv5e4vbt" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [101 126]
- }
+ :pos [101 126]}
  "yat7gbxuiwdfzy6" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-90 18]
- }}
+ :pos [-90 18]}}
  :scale 1
  :scroll [0 0]}}

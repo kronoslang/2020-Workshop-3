@@ -101,7 +101,6 @@
 {:cable-midpoints 
 {}
  :color 3
- 
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
@@ -120,7 +119,6 @@
 {}
  :color 3
  :flip-x true
- 
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
@@ -215,7 +213,6 @@
  }
  "k361qtaw029x6iw" 
 {:color 2
- 
  :inputs ["sig" "cutoff" "resonance"]
  :label "Filter:Lowpass($sig $cutoff $resonance)"
  :outputs [""]
